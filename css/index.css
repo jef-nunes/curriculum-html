@@ -1,3 +1,4 @@
+/* Desktop */
 @font-face {
     font-family: "Holmesh";
     src: url("../fonts/Holmesh.otf");
@@ -36,23 +37,24 @@ hr{
 
 .central{
     display: flex;
-    flex-direction: column;
-    width: 70%;
+    flex-direction: row;
+    width: 60%;
     background-color: rgb(255, 255, 255);
     border-style: solid;
     border-width: 1px;
-    border-color: rgb(119, 122, 124);
+    border-color: rgb(197, 199, 201);
     gap: 10px;
 }
 
 .titulo-container{
     width: 100%;
-    background-color: rgba(233, 236, 253, 0.959);
+    background-color: rgb(247, 249, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
-   /* border-right: 1px solid rgb(116, 100, 173); */
-    padding-top: 10px;
+    border-bottom: 1px solid rgb(208, 208, 212);
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .paragrafos-container{
@@ -64,23 +66,45 @@ hr{
     user-select: none;
     border-style: solid;
     border-width: 2px;
-    border-color: rgb(62, 123, 255);
+    border-color: rgb(45, 111, 255);
     border-radius: 100px;
    /* box-shadow: 0px 0px 10px #1279ff; */
 }
 
 #nome-titulo{
-    color: rgb(89, 83, 180);
+    color: rgb(27, 101, 236);
     font-weight: bold;
-    font-size: 50px;
+    font-size: 54px;
     font-family: "Holmesh", serif;
     padding-bottom: 10px;
     user-select: none;
 }
 
+#contatos-label{
+    color: rgb(85, 102, 199);
+    font-weight: bold;
+    font-size: 22px;
+    font-family: serif;
+    margin-bottom: 10px;
+}
+
 .contato{
     font-family: sans-serif;
-    color: rgb(1, 45, 75);
+    color: rgb(48, 121, 111);
     font-weight: bold;
     font-size: 16px;
+}
+
+/* Tablet */
+@media (max-width:1024px) and (min-width:768px){
+    .central{
+        flex-direction: column;
+    }
+}
+
+/* Smartphone */
+@media (max-width:768px) and (min-width:0px){
+    .central{
+        flex-direction: column;
+    }
 }
