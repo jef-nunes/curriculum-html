@@ -95,6 +95,22 @@ hr{
     font-size: 16px;
 }
 
+@media (min-width:1024px){
+    .central {
+        height: 500px;
+        align-items: center;
+    }
+    .titulo-container{
+        height: 100%;
+        padding: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    #foto-pessoal{
+        margin-top: 70px;
+    }
+}
+
 /* Tablet */
 @media (max-width:1024px) and (min-width:768px){
     .central{
